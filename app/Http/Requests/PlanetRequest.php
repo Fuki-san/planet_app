@@ -22,10 +22,12 @@ class PlanetRequest extends FormRequest
     public function rules(): array
     {
         return [
+
+        //regex:/^[a-zA-Z]+$/
             'name' => 'required | string | max:50',
-            'en_name' => 'required | string | max:50',
-            'radius' => 'required | integer',
-            'weight' => 'required | integer',
+            'en_name' => 'required | string | max:50 | regex:/^[a-zA-Z]+$/',
+            'radius' => 'required | integer | max:1000',
+            'weight' => 'required | integer | max:1000',
         ];
     }
     
