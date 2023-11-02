@@ -13,16 +13,16 @@ class PlanetSeeder extends Seeder
      */
     public function run(): void
     {
-        $data = [
-            'id' => 3,
-            'name' => '地球',
-            'en_name' => 'earth',
-            'radius' => 2,
-            'weight' => 4,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ];
+        // $data = [
+        //     'id' => 3,
+        //     'name' => '地球',
+        //     'en_name' => 'earth',
+        //     'radius' => 2,
+        //     'weight' => 4,
+        //     'created_at' => now(),
+        //     'updated_at' => now(),
+        // ];
 
-        DB::table('planets')->insert($data);
+        // DB::table('planets')->insert($data);
     }
 }
